@@ -11,8 +11,8 @@ const TRADES = [
 
 const CITIES = [
   "Lekki", "Ikeja", "Victoria Island", "Surulere", "Yaba", "Ikorodu","Mushin","Ibeju-Lekki",
-  "Ajah", "Badagry", "Epe", "Oshodi", "Agege", "Festac", "Alimosho", "Apapa", "Somolu", "Badagry",
-  "Maryland", "Gbagada", "Ojodu","Eti-Osa", "Bariga", "Isolo", "Egbeda", "Other",
+  "Ajah", "Badagry", "Epe", "Oshodi", "Agege", "Festac", "Alimosho", "Apapa", "Somolu", "Egbeda",
+  "Maryland", "Gbagada", "Ojodu","Eti-Osa", "Bariga", "Isolo", "Other",
 ];
 
 interface FormState {

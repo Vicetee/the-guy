@@ -5,14 +5,14 @@ import "./WorkerRegister.css";
 
 const TRADES = [
   "Plumber", "Electrician", "Carpenter", "Painter", "Welder",
-  "Mason / Bricklayer", "Tiler", "AC Technician", "Generator Technician",
+  "Mason / Bricklayer", "Tiler", "AC Technician", "Generator Technician", "Designer",
   "Roofer", "Cleaner", "Fumigator", "Security Guard", "Driver", "Developer", "Other",
 ];
 
 const CITIES = [
   "Lekki", "Ikeja", "Victoria Island", "Surulere", "Yaba", "Ikorodu","Mushin","Ibeju-Lekki",
   "Ajah", "Badagry", "Epe", "Oshodi", "Agege", "Festac", "Alimosho", "Apapa", "Somolu", "Badagry",
-  "Maryland", "Gbagada", "Ojodu","Eti-Osa", "Bariga", "Isolo", "Other",
+  "Maryland", "Gbagada", "Ojodu","Eti-Osa", "Bariga", "Isolo", "Egbeda", "Other",
 ];
 
 interface FormState {

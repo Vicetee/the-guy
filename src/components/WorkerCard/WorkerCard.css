@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500&display=swap');
+
+.wcard {
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  padding: 20px;
+  border: 1px solid rgba(255,255,255,0.6);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  position: relative;
+  overflow: hidden;
+  animation: cardIn 0.5s ease both;
+  font-family: 'DM Sans', sans-serif;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.wcard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.15);
+}
+
+@keyframes cardIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.wcard::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #0a6e6e, #0d9494);
+  border-radius: 18px 18px 0 0;
+}
+
+.wcard__verified {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #0a6e6e;
+  background: rgba(10,110,110,0.1);
+  border: 1px solid rgba(10,110,110,0.2);
+  border-radius: 20px;
+  padding: 3px 10px;
+  letter-spacing: 0.3px;
+}
+
+.wcard__top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.wcard__avatar {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0a6e6e, #0d9494);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+  border: 2px solid rgba(10,110,110,0.2);
+}
+
+.wcard__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wcard__avatar span {
+  color: white;
+  font-family: 'Syne', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.wcard__info {
+  flex: 1;
+  min-width: 0;
+}
+
+.wcard__name {
+  font-family: 'Syne', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #0a2a2a;
+  margin: 0 0 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.wcard__trade {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  color: #0a6e6e;
+  font-weight: 500;
+}
+
+.wcard__trade-icon { font-size: 14px; }
+
+.wcard__exp {
+  font-size: 11.5px;
+  color: rgba(10,40,40,0.45);
+  margin-top: 3px;
+}
+
+.wcard__gender {
+  font-size: 18px;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.wcard__gender--male {
+  background: rgba(40,100,200,0.1);
+  color: #1a5fcc;
+}
+
+.wcard__gender--female {
+  background: rgba(200,40,100,0.1);
+  color: #cc1a5f;
+}
+
+.wcard__bio {
+  font-size: 13px;
+  color: rgba(10,40,40,0.6);
+  line-height: 1.6;
+  border-left: 2px solid rgba(10,110,110,0.2);
+  padding-left: 10px;
+  margin: 0;
+}
+
+.wcard__location {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12.5px;
+  color: rgba(10,40,40,0.5);
+}
+
+.wcard__location svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.wcard__actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 2px;
+}
+
+.wcard__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 11px 0;
+  border-radius: 10px;
+  font-size: 13.5px;
+  font-weight: 600;
+  font-family: 'DM Sans', sans-serif;
+  text-decoration: none;
+  transition: all 0.18s;
+  cursor: pointer;
+}
+
+.wcard__btn svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.wcard__btn--call {
+  background: rgba(10,74,96,0.08);
+  color: #0a4a60;
+  border: 1px solid rgba(10,74,96,0.2);
+}
+
+.wcard__btn--call:hover {
+  background: rgba(10,74,96,0.14);
+}
+
+.wcard__btn--wa {
+  background: #0a6e6e;
+  color: white;
+  border: 1px solid transparent;
+}
+
+.wcard__btn--wa:hover {
+  background: #085858;
+  transform: scale(1.02);
+}

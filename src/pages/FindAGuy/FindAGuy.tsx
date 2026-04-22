@@ -4,8 +4,8 @@ import "./FindAGuy.css";
 
 const TRADES = [
   "Plumber", "Electrician", "Carpenter", "Painter", "Welder",
-  "Mason / Bricklayer", "Tiler", "AC Technician", "Generator Technician",
-  "Roofer", "Cleaner", "Fumigator", "Security Guard", "Driver", "Other",
+  "Mason / Bricklayer", "Tiler", "AC Technician", "Generator Technician", "Fashion Designer",
+  "Roofer", "Cleaner", "Fumigator", "Security Guard", "Driver", "Nail Technician", "Other",
 ];
 
 export default function FindAGuy() {

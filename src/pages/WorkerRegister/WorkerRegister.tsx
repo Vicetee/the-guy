@@ -6,13 +6,13 @@ import "./WorkerRegister.css";
 const TRADES = [
   "Plumber", "Electrician", "Carpenter", "Painter", "Welder",
   "Mason / Bricklayer", "Tiler", "AC Technician", "Generator Technician", "Designer",
-  "Roofer", "Cleaner", "Fumigator", "Security Guard", "Driver", "Developer", "Other",
+  "Roofer", "Cleaner", "Fumigator", "Security Guard", "Driver", "Nail Technician", "Other",
 ];
 
 const CITIES = [
   "Lekki", "Ikeja", "Victoria Island", "Surulere", "Yaba", "Ikorodu","Mushin","Ibeju-Lekki",
   "Ajah", "Badagry", "Epe", "Oshodi", "Agege", "Festac", "Alimosho", "Apapa", "Somolu", "Egbeda",
-  "Maryland", "Gbagada", "Ojodu","Eti-Osa", "Bariga", "Isolo", "Other",
+  "Maryland", "Gbagada", "Ojodu","Eti-Osa", "Bariga", "Isolo","Ikoyi","Ketu", "Other",
 ];
 
 interface FormState {
@@ -252,7 +252,7 @@ export default function WorkerRegister() {
               placeholder="Tell clients about yourself — your skills, availability, and what makes you reliable..."
               value={form.bio}
               onChange={(e) => set("bio", e.target.value)}
-              rows={3}
+              rows={4}
             />
           </div>
 
